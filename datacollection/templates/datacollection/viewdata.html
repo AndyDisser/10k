@@ -1,0 +1,56 @@
+{% extends 'datacollection/base.html' %}
+{% load static %}
+
+{% block body %}
+<br>
+<div class="container">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AnNuMa</td>
+                    <td>{{ AnNuMa }}</td>
+                </tr>
+                <tr>
+                    <td>Algo1</td>
+                    <td>{{ Algo1 }}</td>
+                </tr>
+                <tr>
+                    <td>PDB</td>
+                    <td>{{ PDB }}</td>
+                </tr>
+                <tr>
+                    <td>PPDC</td>
+                    <td>{{ PPDC }}</td>
+                </tr>
+                <tr>
+                    <td>RTKS</td>
+                    <td>{{ RTKS }}</td>
+                </tr>
+                <tr>
+                    <td>Kaggle</td>
+                    <td>{{ Kaggle }}</td>
+                </tr>
+                <tr>
+                    <td>edx</td>
+                    <td>{{ edx }}</td>
+                </tr>
+                <tr>
+                    <td>Web Programming</td>
+                    <td>{{ WebProgramming }}</td>
+                </tr>
+                <tr>
+                    <td><b>Total Time Spend</b></td>
+                    <td><b>{{ total_time }}</b></td>
+                </tr>
+            </tbody>
+        </table>
+
+</div>
+{% endblock %}
